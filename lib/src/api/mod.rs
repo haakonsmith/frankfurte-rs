@@ -13,7 +13,7 @@ use url::Url;
 use crate::error::{Error, Result};
 
 /// A HTTP client for making requests to a Frankfurter API.
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct ServerClient {
     url: Url,
     /// Inner client to perform HTTP requests.
